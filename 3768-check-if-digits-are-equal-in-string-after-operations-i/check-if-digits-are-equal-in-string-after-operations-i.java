@@ -11,8 +11,8 @@ class Solution {
             }
             a=b;
         }
-
-         return a.charAt(0) == a.charAt(1);
+      
+         return a.charAt(0)==a.charAt(1);
         
     }
 }
