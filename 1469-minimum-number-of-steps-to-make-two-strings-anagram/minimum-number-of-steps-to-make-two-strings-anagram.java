@@ -1,0 +1,16 @@
+class Solution {
+    public int minSteps(String s, String t) {
+       int ch[]=new int[26];
+       for(int i=0;i<s.length();i++){
+        ch[s.charAt(i)-'a']++;
+        ch[t.charAt(i)-'a']--;
+       }
+       int count=0;
+       for(int n:ch){
+        if(n>0){
+            count+=n;
+        }
+       }
+      return count;
+    }
+}
