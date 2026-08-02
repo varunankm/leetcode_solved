@@ -9,16 +9,15 @@ class Solution {
             l2.add(i);
         }
        }
-      List<Integer> ans=new ArrayList<>();
-      for(int i:l1){
-        ans.add(i);
-      }
-      for(int i:l2){
-        ans.add(i);
-      }
-      for(int i=0;i<ans.size();i++){
-        nums[i]=ans.get(i);
-      }
+     int k=0;
+     for(int i:l1){
+        nums[k]=i;
+        k++;
+     }
+     for(int i:l2){
+        nums[k]=i;
+        k++;
+     }
       return nums;
     }
 }
