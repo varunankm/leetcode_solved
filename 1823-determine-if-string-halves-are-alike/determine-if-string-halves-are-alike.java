@@ -13,14 +13,8 @@ class Solution {
     }
     public boolean halvesAreAlike(String s) {
         int n=s.length()/2;
-        String l="";
-        String r="";
-        for(int i=0;i<n;i++){
-            l+=s.charAt(i);
-        }
-        for(int i=n;i<s.length();i++){
-            r+=s.charAt(i);
-        }
+        String l=s.substring(0,n);
+        String r=s.substring(n,s.length());
        
         if(vcount(r)==vcount(l)){
             return true;
